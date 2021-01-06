@@ -87,9 +87,8 @@ public class Game {
   public Game() {
     try {
       initRooms("data/rooms.dat");
-      currentRoom = masterRoomMap.get("ROOM_1");
+      currentRoom = masterRoomMap.get("Entrance");
     } catch (Exception e) {
-      // TODO Auto-generated catch block
       e.printStackTrace();
     }
     parser = new Parser();

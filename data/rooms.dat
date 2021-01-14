@@ -1,60 +1,60 @@
 Room Name: Entrance
-Room Description:  You have arrived at the entrance. Their is a backpack on the floor. What would you like to do?
+Room Description: You have arrived at the entrance. Their is a backpack on the floor. What would you like to do?
 Exit Rooms: N-Lobby, W-Parking Lot
 Room Name: Lobby
-Room Description:  You are now in the lobby. The guy infront of you has a gun hanging on the back of his pants. What would you like to do?
+Room Description: You are now in the lobby. The guy infront of you has a gun hanging on the back of his pants. What would you like to do?
 Exit Rooms: S-Entrance, N-Spa, E-Staircase, W-Side Entrance
 Room Name: Spa
-Room Description:  You have entered the hotel's spa. What would you like to do?
+Room Description: You have entered the hotel's spa. What would you like to do?
 Exit Rooms: W-Pool, S-Lobby, E-Restroom
 Room Name: Pool
-Room Description:  You have exited the building and entered the outdoor pool area. What would you like to do?
+Room Description: You have exited the building and entered the outdoor pool area. What would you like to do?
 Exit Rooms: E-Spa, N-Exit, S-Side Entrance
 Room Name: Exit
-Room Description:  You have exited the hotel property. What would you like to do?
+Room Description: You have exited the hotel property. What would you like to do?
 Exit Rooms: S-Pool, E-Bar
 Room Name: Staircase
-Room Description:  You are at the bottom of the staircase. A mysterious package is on the floor. What would you like to do?
+Room Description: You are at the bottom of the staircase. A mysterious package is on the floor. What would you like to do?
 Exit Rooms: U-Security Room, W-Lobby
 Room Name: Security Room
-Room Description:  You are upstairs in the security room. The security room has a lot of unique gadgets. What would you like to do?
+Room Description: You are upstairs in the security room. The security room has a lot of unique gadgets. What would you like to do?
 Exit Rooms: D-Staircase, N-Restroom
 Room Name: Restroom
-Room Description:  In the restroom you can drink any shield you may have picken up. What would you like to do?
-Exit Rooms: E-Spa, S-Security Room, N-Staff Room
+Room Description: In the restroom you can drink any shield you may have picken up. What would you like to do?
+Exit Rooms: E-Spa, S-Security Room, N-Concierge
 Room Name: Concierge
-Room Description:  You are at the concierge of the hotel. What would you like to do?
+Room Description: You are at the concierge of the hotel. What would you like to do?
 Exit Rooms: S-Restroom, W-Bar, N-Staff Room
 Room Name: Staff Room
-Room Description:  YOU HAVE ENTERED THE STAFF ROOM. THE POLICE ARE CHASING YOU FROM BEHIND. WHAT WOULD YOU LIKE TO DO?
+Room Description: YOU HAVE ENTERED THE STAFF ROOM. THE POLICE ARE CHASING YOU FROM BEHIND. WHAT WOULD YOU LIKE TO DO?
 Exit Rooms: N-Police
 Room Name: Police
-Room Description:  THE POLICE HAVE SURROUNDED YOU. YOU HAVE DIED.
-Exit Rooms:
+Room Description: THE POLICE HAVE SURROUNDED YOU. YOU HAVE DIED.
+Exit Rooms: S-Staff Room
 Room Name: Bar
-Room Description:  You are arrive at the bar. What would you like to do?
-Exit Rooms: W-Exit, E-Concierge, N Casino Hall
+Room Description: You are arrive at the bar. What would you like to do?
+Exit Rooms: W-Exit, E-Concierge, N-Casino Hall
 Room Name: Casino Hall
-Room Description:  You have enetered the Casino Hall. The money is stored multiple levels underground. What would you like to do?
+Room Description: You have enetered the Casino Hall. The money is stored multiple levels underground. What would you like to do?
 Exit Rooms: S-Bar, E-Elevator
 Room Name: Elevator
-Room Description:  You have founded the secret elevator that takes you down to the vault. What would you like to do? *
+Room Description: You have founded the secret elevator that takes you down to the vault. What would you like to do? *
 Exit Rooms: D-Basement
 Room Name: Basement
-Room Description:  You are in the basement and see the massive lock on the vault. What would you like to do?
+Room Description: You are in the basement and see the massive lock on the vault. What would you like to do?
 Exit Rooms: U-Casino Hall, E-Vault, S-Service Elevator
 Room Name: Vault
-Room Description:  You are almost their.* What would you like to do?
+Room Description: You are almost their.* What would you like to do?
 Exit Rooms: W-Basement, S-Money
 Room Name: Money
-Room Description:  You have won! Your reward is 1.2 million dollars!
-Exit Rooms:
+Room Description: You have won! Your reward is 1.2 million dollars!
+Exit Rooms: N-Vault
 Room Name: Service Elevator 
-Room Description:  You are on the service elevator which leads to the staff room.
+Room Description: You are on the service elevator which leads to the staff room.
 Exit Rooms: U-Staff Room
 Room Name: Side Entrance
-Room Description:  You are on the west side of the building at the side entrance. What would you like to do?
+Room Description: You are on the west side of the building at the side entrance. What would you like to do?
 Exit Rooms: N-Pool, E-Lobby, S-Parking Lot
 Room Name: Parking Lot
-Room Description:  You are in the parking lot. What would you like to do?
+Room Description: You are in the parking lot. What would you like to do?
 Exit Rooms: N-Side Entrance, E-Entrance

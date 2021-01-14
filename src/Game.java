@@ -87,7 +87,7 @@ public class Game {
   public Game() {
     try {
       initRooms("data/rooms.dat");
-      currentRoom = masterRoomMap.get("Entrance");
+      currentRoom = masterRoomMap.get("ENTRANCE");
     } catch (Exception e) {
       e.printStackTrace();
     }
@@ -115,8 +115,8 @@ public class Game {
    */
   private void printWelcome() {
     System.out.println();
-    System.out.println("Welcome to Zork!");
-    System.out.println("Zork is a new, incredibly boring adventure game.");
+    System.out.println("Welcome to the Hotel Casino Heist!");
+    System.out.println("Your goal is to get to the vault in a maximum of 12 moves");
     System.out.println("Type 'help' if you need help.");
     System.out.println();
     System.out.println(currentRoom.longDescription());
@@ -134,6 +134,8 @@ public class Game {
     String commandWord = command.getCommandWord();
     if (commandWord.equals("help"))
       printHelp();
+    else if (commandWord.equals("patch"))
+      printPatch();
     else if (commandWord.equals("go"))
       goRoom(command);
     else if (commandWord.equals("quit")) {
@@ -143,6 +145,8 @@ public class Game {
         return true; // signal that we want to quit
     } else if (commandWord.equals("eat")) {
       System.out.println("Do you really think you should be eating at a time like this?");
+    }else if (commandWord.equals("swim")) {
+      System.out.println("Do you really think you should be swimming at a time like this?");
     }
     return false;
   }
@@ -153,11 +157,15 @@ public class Game {
    * and a list of the command words.
    */
   private void printHelp() {
-    System.out.println("You are lost. You are alone. You wander");
-    System.out.println("around at Monash Uni, Peninsula Campus.");
+    System.out.println("You are in a Las Vegas hotel tring to steal 1.2 million dollars");
+    System.out.println("Your goal is to get to the vault in a maximum of 12 moves");
     System.out.println();
     System.out.println("Your command words are:");
     parser.showCommands();
+  }
+
+  private void printPatch() {
+    System.out.println("Securtiy camera has been patched");
   }
 
   /**
@@ -174,7 +182,7 @@ public class Game {
     // Try to leave current room.
     Room nextRoom = currentRoom.nextRoom(direction);
     if (nextRoom == null)
-      System.out.println("There is no door!");
+      System.out.println("There is nothing here!");
     else {
       currentRoom = nextRoom;
       System.out.println(currentRoom.longDescription());

@@ -13,7 +13,6 @@ public class Item {
 		return isOpenable;
 	}
 
-
 	public void setOpenable(boolean isOpenable) {
 		this.isOpenable = isOpenable;
 		if(isOpenable)

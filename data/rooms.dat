@@ -1,5 +1,5 @@
 Room Name: Entrance
-Room Description: You have arrived at the entrance. Their is a backpack on the floor. What would you like to do?
+Room Description: You have arrived at the entrance. Their is a backpack on the floor to store your items. What would you like to do?
 Exit Rooms: N-Lobby, W-Parking Lot
 Room Name: Lobby
 Room Description: You are now in the lobby. The guy infront of you has a gun hanging on the back of his pants. What would you like to do?
@@ -20,7 +20,7 @@ Room Name: Security Room
 Room Description: You are upstairs in the security room. The security room has a lot of unique gadgets. What would you like to do?
 Exit Rooms: D-Staircase, N-Restroom
 Room Name: Restroom
-Room Description: In the restroom you can drink any shield you may have picken up. What would you like to do?
+Room Description: In the restroom you can drink any potion you may have picken up. What would you like to do?
 Exit Rooms: E-Spa, S-Security Room, N-Concierge
 Room Name: Concierge
 Room Description: You are at the concierge of the hotel. What would you like to do?
@@ -38,13 +38,13 @@ Room Name: Casino Hall
 Room Description: You have enetered the Casino Hall. The money is stored multiple levels underground. What would you like to do?
 Exit Rooms: S-Bar, E-Elevator
 Room Name: Elevator
-Room Description: You have founded the secret elevator that takes you down to the vault. What would you like to do? *
+Room Description: You have founded the secret elevator that takes you down to the vault. However, you notice a security camera. What would you like to do? 
 Exit Rooms: D-Basement
 Room Name: Basement
 Room Description: You are in the basement and see the massive lock on the vault. What would you like to do?
 Exit Rooms: U-Casino Hall, E-Vault, S-Service Elevator
 Room Name: Vault
-Room Description: You are almost their.* What would you like to do?
+Room Description: You are almost their. Two guards are guaridng the door. What would you like to do?
 Exit Rooms: W-Basement, S-Money
 Room Name: Money
 Room Description: You have won! Your reward is 1.2 million dollars!

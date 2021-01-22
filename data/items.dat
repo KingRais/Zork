@@ -1,16 +1,28 @@
 Item Name: bag
-Item Description: A brown paper bag
+Item Description: a backapck to stor you items
 Openable: true
-Room: Entrance
-Item Name: knife
-Item Description: A sharp knife
+Room:  Entrance
+Item Name: gun
+Item Description: A grey pistol with serial number scratched off.
+Openable: true
+Room:  Lobby
+Item Name: Package
+Item Description: A lost briefcase with loose paper
 Openable: false
-Room: HALLWAY
-Item Name: lantern
-Item Description: A rusty lantern
+Room: Staircase
+Item Name: Beer
+Item Description: A cold beer
 Openable: false
-Room: HALLWAY
-Item Name: pickle
-Item Description: A sour pickle
-Openable: false
-Item: BAG
+Room: Pool
+Item Name: tools
+Item Description: Some high-tech tools to pick a vault
+Openable: true
+Room: Security Room
+Item Name: patcher
+Item Description: Adnanced patcher to deactavate a security camera
+Openable: true
+Room: Security Room
+Item Name: potion
+Item Description: Special potion to give you super power
+Openable: true
+Room: Security Room

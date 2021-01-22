@@ -159,7 +159,7 @@ class Game {
 	private void printWelcome() {
         System.out.println();
         System.out.println("Welcome to the Hotel Casino Heist!");
-        System.out.println("Your goal is to get to the vault in a maximum of 12 moves");
+        System.out.println("Your goal is to get to the vault without the police catching you!");
         System.out.println("Type 'help' if you need help.");
         System.out.println();
         System.out.println(currentRoom.longDescription());
@@ -180,8 +180,16 @@ class Game {
     String commandWord = command.getCommandWord();
         if (commandWord.equals("help"))
           printHelp();
+     if (commandWord.equals("shoot"))
+          printShoot();
+    if (commandWord.equals("pick"))
+          printPick();
         else if (commandWord.equals("patch"))
           printPatch();
+    else if (commandWord.equals("drink"))
+          printJump();
+    else if (commandWord.equals("jump"))
+          printJump();
         else if (commandWord.equals("go"))
           goRoom(command);
         else if (commandWord.equals("quit")) {
@@ -201,10 +209,11 @@ class Game {
                 takeItem(command.getSecondWord());
         } else if (commandWord.equals("eat")) {
           System.out.println("Do you really think you should be eating at a time like this?");
-        }else if (commandWord.equals("swim")) {
-          System.out.println("Do you really think you should be swimming at a time like this?");
+        } else if (commandWord.equals("swim")) {
+            System.out.println("You have drowned.");
         }
-    
+  }
+
 
 	private void openItem(String itemName) {
 		Item item = inventory.contains(itemName);
@@ -226,11 +235,6 @@ class Game {
 			if (inventory.addItem(item)) {
 				System.out.println("You have taken the " + itemName);
 				
-				if (currentRoom.getRoomName().equals("Hallway") &&  itemName.equals("ball")) {
-					currentRoom = masterRoomMap.get("ATTIC");
-					System.out.println("You seem to be lying on the floor all confused. It seems you have been here for a while.\n");
-					System.out.println(currentRoom.longDescription());
-				}
 			}else {
 				System.out.println("You were unable to take the " + itemName);
 			}
@@ -251,27 +255,60 @@ class Game {
 		}else {
 			System.out.println("You are not carrying a " + itemName + ".");
 		}
-	}
+  }
+  
+  private void shoot(String itemName) {
 
-	private void eat(String secondWord) {
-		if (secondWord.equals("steak"))
-			System.out.println("YUMMY");
-		else if (secondWord.equals("bread"))
-			System.out.println("I don't eat carbs...");
+				if (currentRoom.getRoomName().equals("Vault") &&  itemName.equals("gun")) {
+					System.out.println("You have shot the guard!.\n");
+        }
+       else if (currentRoom.getRoomName().equals("Vault") &&  itemName.equals(null)) {
+					System.out.println("The guards have shot you!.\n");
+			}else {
+				System.out.println("You were unable to shoot as their is no one in front of you");
+			
+		}
+  }
+  
+  private void pick(String itemName) {
+
+    if (currentRoom.getRoomName().equals("Basement") &&  itemName.equals("tools")) {
+      System.out.println("You have picked the lock!.\n");
+    }
+   else if (currentRoom.getRoomName().equals("Basement") &&  itemName.equals(null)) {
+      System.out.println("You cannot pick the lock. The police have shot you. You have died.\n");
+  }else {
+    System.out.println("You were unable to pick the lock");
+  
+}
+}
+
+
+  private void patch(String itemName) {
+
+    if (currentRoom.getRoomName().equals("Elevator") &&  itemName.equals("patcher")) {
+      System.out.println("You have patched the camera!.\n");
+    }
+   else if (currentRoom.getRoomName().equals("Elevator") &&  itemName.equals(null)) {
+      System.out.println("Your picture has been taking and the cops are hunting you down.\n");
+  }else {
+    System.out.println("You were unable to shoot as their is no one in front of you");
+  
+}
+}
+
+	private void drink(String secondWord) {
+		if (secondWord.equals("potion"))
+			System.out.println("YOU ARE NOW BULLET PROOF");
 		else 
-			System.out.println("You are the " + secondWord);
+			System.out.println("That drink is not available");
 		
   }
   
 
 
-	private void sit() {
-		System.out.println("You are now sitting. You lazy excuse for a person.");
-		
-	}
-
 	private boolean jump() {
-		System.out.println("You jumped. Ouch you fell. You fell hard. Really hard. You are getting sleepy. Very sleepy! Yuo are dead!");
+		System.out.println("You jumped. Ouch you fell. You fell hard. Really hard. You are getting sleepy. Very sleepy! You are dead!");
 		return true;
 	}
 
@@ -282,15 +319,12 @@ class Game {
 	 */
 	private void printHelp() {
         System.out.println("You are in a Las Vegas hotel tring to steal 1.2 million dollars");
-        System.out.println("Your goal is to get to the vault in a maximum of 12 moves");
+        System.out.println("Your goal is to get to the vault without the police catching you!");
         System.out.println();
         System.out.println("Your command words are:");
         parser.showCommands();
       }
-      private void printPatch() {
-        System.out.println("Securtiy camera has been patched");
-      }
-    
+
 
 	/**
 	 * Try to go to one direction. If there is an exit, enter the new room,
